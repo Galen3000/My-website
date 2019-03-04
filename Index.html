@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <style>
+        h1 {
+            color: rgb(10, 10, 150);
+        }
+        body {background-color: rgb(0, 175, 255); 
+            font-family:sans-serif; 
+            text-align:left;
+        }
+        h2 {background-color: white; 
+            text-align:center;
+        }
+        .instructions {background-color: white; 
+            font-size: 1.25em; 
+            text-align:center;
+        }
+        p {font-size: 1.25em; 
+        }
+        div {
+  padding-top: 10px;
+  padding-right: 200px;
+  padding-bottom: 50px;
+  padding-left: 300px;
+}
+        .example {color: rgb(255,10,10);}
+        #greeting {
+            font-size: 1.5em;
+        }
+        </style>
+<title>Brackets Tutorial</title>
+    </head>
+<body><div>
+<h1>Creating a Brackets webpage</h1>
+    <p id="greeting">Hello!</p> 
+        <p>On this webpage, you will learn how to create a webpage using the program Brackets.</p>
+    <!--hello-->
+    <h2>Contents</h2>
+    <p> <a href="#start">1. Getting started</a><br>
+        <a href="#pictures">2. Putting pictures in</a><br>
+        <a href="#video">3. Encoding a video</a><br>
+        
+    </p>
+    <h2 id="start">Getting started</h2>
+    <p> The following instructions will tell you how you can begin making a page.
+        
+    <ol class="instructions"><strong>Instructions:</strong>
+        <li> Open Brackets</li> 
+        <li> Create a new file and save it in a  folder</li>
+        <li> Create an Assets folder and CSS folder inside the folder too</li>
+        <li> Type <!--found out how to put the angle brackets in the page-->&lt;!DOCTYPE html&gt; at the top</li>
+        <li> Add a &lt;title&gt; tag to name the page</li>
+        <li> Add a &lt;body&gt; tag to type everything you want the user to see in</li>
+    </ol>
+    
+    <h2 id="pictures">Putting pictures in</h2>
+    <p> Sometimes you may want to put pictures into your page. This is how you can do that.
+    <ol class="instructions"><strong>Instructions</strong>
+        <li> Move or copy the picture into the assets folder</li>
+        <li> Put the picture into the page using the &lt;img&gt; tag. <strong>For example:</strong> &lt;img src=koala.png&gt;</li>
+        <li> Add alt text so that if a browser can't show the image it can instead read it out. <strong>Ex:</strong> alt="A picture of a koala bear"</li>
+        <li> Change the height or width to whatever you think will look right</li>
+    </ol>
+    <p class="example"> Here is an example image</p>
+    <img src="Assets/example%20picture.jpg" alt="a picture of a grey cat in a forest looking towards the right" height=200px>
+    
+    <h2 id="video">Encoding a video</h2>
+    <p> You may need to encode a video before you put it on a webpage. Here is one way to do that using Adobe Media Encoder.</p>
+    <ol class="instructions"><strong>Instruction</strong>
+        <li> Open Adobe Media Encoder</li>
+        <li> Add a source and click on it</li>
+        <li> Change the settings to your liking and click OK</li>
+        <li> Move the encoded video file to the assets folder</li>
+        <li> Put the video in the page with the &lt;video&gt; tag and the &lt;source&gt; tag</li>
+    </ol>
+    <p class="example">Here is a video that I encoded:</p>
+    <video width="720" Height="480" controls>
+    <source src="Assets/School Hallway Video_1.mp4" type="video/mp4">
+            <p>Uh oh! Something went wrong :(</p>
+    </video>
+    </div>
+</body>
+</html>
